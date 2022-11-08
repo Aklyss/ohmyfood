@@ -1,0 +1,13 @@
+
+.header__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.header__logo{
+    height: auto; width: 250px;
+}

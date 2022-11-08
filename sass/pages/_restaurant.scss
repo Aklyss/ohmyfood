@@ -1,0 +1,135 @@
+.main__img{
+    width: 100%;
+}
+
+.main__section{
+    background-color: rgb(240, 240, 240);
+    margin-top: -45px;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 5%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__plat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 17px;
+    box-shadow: 0 5px 7px 0px rgb(221, 221, 221);
+    animation: affiche 3s ease-in-out both;
+
+    &:nth-child(3){
+        animation-delay: 0s;
+    }
+    &:nth-child(4){
+        animation-delay: 0.2s;
+    }
+    &:nth-child(5){
+        animation-delay: 0.4s;
+    }
+    &:hover>.green{
+        animation: vert 2s ease-in-out both;
+    }
+    &:hover .fa-circle-check{
+    animation: spin 2.5s ease-in-out both; 
+    
+    }
+
+}
+
+.menu__block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.green{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $colour-tertiary;
+    width: 0px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+
+@keyframes vert{
+    0%{width:0%;opacity: 0;}
+
+    100%{width:100px;opacity: 1;}
+}
+
+@keyframes spin{
+    0%{transform: rotate(45deg); opacity: 0;}
+    100%{transform: rotate(360deg); opacity: 1;}
+}
+
+@keyframes affiche{
+    0%{opacity: 0; transform: translateY(20px);}
+    100%{opacity: 1; transform: translateY(0px)}
+}
+
+.section__ajust .menu__plat:nth-child(1){
+    background-color: red;
+}
+
+
+.button__com{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.com{
+    padding: 20px 55px;
+}
+
+.section__head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        .heart{
+            position: absolute;
+            right: 45px;
+            top: 40px;
+        }
+}
+
+.menu__price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .main__img{
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .section__section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main__imgmain{
+        display: flex;
+        justify-content: center;
+    }
+    .section__ajust{
+        width: 30%;
+    }
+
+}
+

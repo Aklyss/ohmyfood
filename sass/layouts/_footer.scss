@@ -1,0 +1,24 @@
+footer{
+    background-color: rgb(43, 43, 43);
+    padding: 30px;
+    img{
+        filter: invert(100%);
+        width: 120px; 
+        margin-bottom: 10px ;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        li{
+            color: white;
+            margin: 10px 0px;
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.fa-handshake-angle{
+    font-size: 11px;
+}

@@ -1,0 +1,41 @@
+button{
+    padding: 20px 25px;
+    background: linear-gradient(to bottom right, $colour-secondary , $colour-primary );
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 0px 6px 10px 2px rgb(163, 163, 163);
+    font-size: 20px;
+    color: white;
+    &:hover{
+        box-shadow: 0px 6px 10px 2px rgb(122, 122, 122);
+        opacity: 0.9;
+    }
+
+}
+
+.like{
+    position: relative;
+    &:hover>.fa-regular{
+        opacity: 0;
+    }
+    &:hover>.fa-solid{
+        opacity: 0;
+        animation: coeur 3s ease-in-out;
+    }
+    
+    i{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .fa-solid{
+        opacity: 0;
+        color: $colour-primary;
+    }
+}
+
+@keyframes coeur{
+    0%{opacity: 0;}
+
+    100%{opacity: 1;}
+}

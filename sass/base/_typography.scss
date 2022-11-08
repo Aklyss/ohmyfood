@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+*{
+    margin: 0;
+    box-sizing:content-box ;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+   color: black;
+}
+
+.a{
+    color: white;
+}
+
+.fa-mobile-screen-button, .fa-list-ul, .fa-store{
+    color: rgb(126, 126, 126); 
+}
+
+.fa-location-dot{
+    color: black;
+    margin-right:15px;
+}
+
+.fa-heart{
+    font-size: 30px;
+}
+
+.section__titre{
+    font-size: 30px;
+    font-family: 'Shrikhand';
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.section__soustitre{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.menu__titre{
+    font-size: 20px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trait{
+    border-top: 4px solid $colour-tertiary;
+    width : 50px;
+    margin-top: 5px;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fa-arrow-left{
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    color: rgb(54, 54, 54);
+}
+
+.menu__info{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fa-circle-check{
+    font-size: 30px;
+    color: white;
+    padding: 30%;
+    transform: rotate(45deg);
+    opacity: 0;
+}

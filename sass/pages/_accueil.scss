@@ -3,7 +3,7 @@ body{
 }
 
 .loader{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100%;
@@ -113,7 +113,7 @@ ol {
         margin-bottom: 20px;
         box-shadow: 2px 5px 5px 0px rgb(233, 233, 233);
 
-        span {
+        div {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -129,7 +129,6 @@ ol {
             margin-right: 8px;
             margin-left: -10px;
             background: $colour-primary;
-            -moz-border-radius: 60px;
             border-radius: 60px;
             font-weight: bold;
             font-size: 0.8em;
@@ -138,7 +137,7 @@ ol {
         }
         &:hover{
             background-color: rgb(249, 230, 255);
-            &>span i{
+            &>div i{
                 color: $colour-primary;
             }
         }
@@ -260,15 +259,17 @@ ol {
     .restaurant__card {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 3%;
+    }
+
+    article{
+        width: 22%!important;
     }
 
     .section__card {
         border-radius: 20px;
         background-color: white;
         margin-top: 20px;
-        width: 10%;
+        
 
         img {
             height: 450px;

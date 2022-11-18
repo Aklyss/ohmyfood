@@ -469,6 +469,9 @@ ol li:hover > div i {
 .menu__plat:nth-child(5) {
   animation-delay: 0.4s;
 }
+.menu__plat:nth-child(6) {
+  animation-delay: 0.6s;
+}
 .menu__plat:hover > .green {
   animation: vert 2s ease-in-out both;
 }
